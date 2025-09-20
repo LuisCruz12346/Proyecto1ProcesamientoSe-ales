@@ -27,11 +27,11 @@ void main(){
 
     fclose(signal_file);
 
-    quantize(xs, 4, "q4_signal.dat");
-    quantize(xs, 6, "q6_signal.dat");
-    quantize(xs, 8, "q8_signal.dat");
+    quantize(xs, 5, "q5_signal.dat");
+    quantize(xs, 9, "q9_signal.dat");
+    quantize(xs, 11, "q11_signal.dat");
 
-    system("gnuplot -p graf2.gp");
+    system("gnuplot -p graf_quant.gp");
 
 }
 
